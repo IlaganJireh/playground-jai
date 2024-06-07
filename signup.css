@@ -6,17 +6,17 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #83d1db;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .welcome-section {
+}
+
+.welcome-section {
     background-color: #334868;
     color: #ffffff;
     padding: 50px;
@@ -25,50 +25,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-  }
-  
-  .welcome-section h1 {
+}
+
+.welcome-section h1 {
     margin: 0;
     font-size: 2.5em;
-  }
-  
-  .welcome-section p {
+}
+
+.welcome-section p {
     font-size: 1.2em;
     margin-top: 20px;
-  }
-  
-.signin-section {
+}
+
+.form-section {
     padding: 50px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-.signin-section h2 {
-    margin-bottom: 30px;
-    font-size: 2em;
-    color: #00796b;
-  }
-  
-.reg {
-    width: 200px;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #0288d1;
-    transition: background-color 0.3s;
-  }
-  
-.reg:hover {
-    background-color: #0277bd;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -78,36 +56,20 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #fff;
-  }
-  
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  
-  input[type=text],
-  input[type=email],
-  input[type=password] {
+}
+
+input[type=email],
+input[type=text],
+input[type=password],
+input[type=date] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 100%;
     box-sizing: border-box;
-  }
-  
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-  }
-  
-  .submit-btn {
+}
+
+.submit-btn {
     padding: 12px 24px;
     background-color: #2C3E50;
     color: white;
@@ -121,9 +83,9 @@ body {
     letter-spacing: 1px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .submit-btn::before {
+}
+
+.submit-btn::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -134,55 +96,29 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     transition: width 0.3s ease, height 0.3s ease;
-  }
-  
-  .submit-btn:hover::before {
+}
+
+.submit-btn:hover::before {
     width: 200%;
     height: 200%;
-  }
-  
-  .submit-btn:hover {
+}
+
+.submit-btn:hover {
     background-color: #1A232C;
-  }
-  
-  .submit-text {
+}
+
+.submit-text {
     position: relative;
     z-index: 1;
-  }
-      
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-      
-input[type=text],
-input[type=email],
-input[type=password] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 100%;
-    box-sizing: border-box;
-      }
-      
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-  }
-      
-  
-  .separator {
+}
+
+.separator {
     margin: 20px 0;
     font-size: 1em;
     color: #888;
-  }
-  
-  .create-account-btn {
+}
+
+.create-account-btn {
     width: 200px;
     padding: 10px;
     border: 2px solid #33527f;
@@ -192,58 +128,58 @@ input[type=password] {
     color: #33527f;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .create-account-btn:hover {
+}
+
+.create-account-btn:hover {
     background-color: #33527f;
     color: #ffffff;
-  }
-  
-  .login-link {
+}
+
+.login-link {
     margin-top: 20px;
     font-size: 1em;
     color: #00796b;
-  }
-  
-  .login-link a {
+}
+
+.login-link a {
     color: #33527f;
     text-decoration: none;
     transition: color 0.3s;
-  }
-  
-  .login-link a:hover {
+}
+
+.login-link a:hover {
     color: #1a3155;
     text-decoration: underline;
-  }
-  
-  @media only screen and (max-width: 424px) {
+}
+
+@media only screen and (max-width: 424px) {
     body, .container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .container {
-      margin: 10px;
+        margin: 10px;
     }
-  
+
     .welcome-section {
-      align-items: center;
-      padding: 18px;
+        align-items: center;
+        padding: 18px;
     }
-  
-    .signin-section {
-      padding: 18px;
+
+    .form-section {
+        padding: 18px;
     }
-  
+
     .welcome-section h1 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
-    .welcome-section p, .signin-section h2, .signin-btn, .create-account-btn {
-      font-size: 14px;
+
+    .welcome-section p, .form-section h2, .submit-btn, .create-account-btn {
+        font-size: 14px;
     }
-  
-    .signin-btn, .create-account-btn {
-      width: 100%;
-      margin: 5px 0;
+
+    .submit-btn, .create-account-btn {
+        width: 100%;
+        margin: 5px 0;
     }
-  }
+}
