@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MemoirVerse Sign In</title>
+    <title>MemoirVerse Registration</title>
     <link rel="stylesheet" href="./signup.css" />
   </head>
   <body>
