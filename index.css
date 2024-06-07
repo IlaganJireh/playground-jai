@@ -153,6 +153,13 @@ form input:focus {
   text-decoration: underline; /*Jai testing*/
 }
 
+/*For interface - Jai*/
+
+
+
+
+
+
 @media only screen and (max-width: 424px) {
   body, .container {
     flex-direction: column;
