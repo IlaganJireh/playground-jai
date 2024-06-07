@@ -11,12 +11,11 @@ body {
 .container {
     display: flex;
     background-color: #ffffff;
-    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 15px 15px 15px rgba(0,0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
     width: 800px; /* Adjusted width */
     padding: 0px;
-    box-shadow: #031224;
 }
 
 .welcome-section {
