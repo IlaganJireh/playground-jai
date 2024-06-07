@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MemoirVerse Sign Up</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="signin-section">
-        <h2>Register Account</h2>
-        <form action="signup_process.php" method="post">
-          <input type="text" name="username" placeholder="Username" required/>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required/>
-          <button type="submit" class="signin-btn">Register</button>
-        </form>
-        <p class="login-link">
-          Already have an account?
-          <a href="index.php">Log in</a>
-        </p>
-      </div>
-    </div>
-  </body>
+<html>
+<head>
+  <title>MemorVerse Registration</title>
+  <link rel="stylesheet" type="text/css" href="./reg-form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to MemorVerse!</h1>
+    <p>Enter your personal details to use all of site features.</p>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="text" placeholder="First Name" required>
+      <input type="password" placeholder="Password" required>
+      <input type="date" placeholder="Date of Birth" required>
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
