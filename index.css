@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #83d1db;/*jai testing*/
+  background-color: #83d1db;
 }
 
 .container {
@@ -49,7 +49,7 @@ body {
 .signin-section h2 {
   margin-bottom: 30px;
   font-size: 2em;
-  color: #00796b; /*Jai testing*/
+  color: #00796b;
 }
 
 .signin-btn {
@@ -60,13 +60,13 @@ body {
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  background-color: #0288d1; /*Jai testing*/
+  background-color: #0288d1;
   transition: background-color 0.3s;
 }
 
 .signin-btn:hover {
   background-color: #0277bd;
-} /*Jai testing*/
+}
 
 form input {
   width: 100%;
@@ -80,11 +80,11 @@ form input {
 }
 
 form input:focus {
-  border-color: #0288d1; /* Light blue border on focus */
+  border-color: #0288d1;
   outline: none;
   box-shadow: 0 0 5px rgba(2, 136, 209, 0.5);
 }
-/*NEW TESTING*/
+
 
 .github {
   background-color: #333;
@@ -139,7 +139,7 @@ form input:focus {
 .login-link {
   margin-top: 20px;
   font-size: 1em;
-  color: #00796b; /*Jai testing*/
+  color: #00796b;
 }
 
 .login-link a {
@@ -150,7 +150,7 @@ form input:focus {
 
 .login-link a:hover {
   color: #1a3155;
-  text-decoration: underline; /*Jai testing*/
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 424px) {
