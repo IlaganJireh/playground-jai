@@ -10,6 +10,8 @@ body {
 h1 {
     background-color: #2C3E50;
     color: #ffffff;
+    display: flex;
+    text-align: center;
 }
 
   .container {
