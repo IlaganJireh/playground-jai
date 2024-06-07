@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MemorVerse Registration</title>
-  <link rel="stylesheet" type="text/css" href="./reg-form.css">
+  <title>MemoirVerse Registration</title>
+  <link rel="stylesheet" type="text/css" href="./inde.css">
 </head>
 <body>
   <div class="container">
