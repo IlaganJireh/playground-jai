@@ -5,15 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5; /* Light gray background */
-  }
-  
-  h1 {
-    background-color: #2C3E50;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    background-color: #83d1db;
   }
   
   .container {
@@ -22,8 +14,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    max-width: 800px;
-    width: 100%;
   }
   
   .welcome-section {
@@ -35,7 +25,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    order: 2; /* Move the blue section to the right */
   }
   
   .welcome-section h1 {
@@ -48,69 +37,207 @@ body {
     margin-top: 20px;
   }
   
-  form {
+  .signin-section {
     padding: 50px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    order: 1; /* Move the form to the left */
-    background-color: #ffffff; /* White background for the form */
-    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    justify-content: center;
+    align-items: center;
   }
   
-  input[type="email"],
-  input[type="text"],
-  input[type="password"],
-  input[type="date"] {
+  .signin-section h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #00796b;
+  }
+  
+  .signin-btn {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #0288d1;
+    transition: background-color 0.3s;
+  }
+  
+  .signin-btn:hover {
+    background-color: #0277bd;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  input[type=text],
+  input[type=email],
+  input[type=password] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 100%;
     box-sizing: border-box;
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
   }
   
-  input[type="email"]:focus,
-  input[type="text"]:focus,
-  input[type="password"]:focus,
-  input[type="date"]:focus {
-    outline: none; /* Remove default outline */
-    border-color: #2C3E50; /* Change border color on focus */
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
   }
   
-  button[type="submit"] {
+  .submit-btn {
     padding: 10px 15px;
     background-color: #2C3E50;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
   }
   
-  button[type="submit"]:hover {
+  .submit-btn:hover {
+    background-color: #1A232C;
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    }
+  }
+      
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+      
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+      }
+      
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+  }
+      
+  .submit-btn {
+    padding: 10px 15px;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+      
+  .submit-btn:hover {
     background-color: #1A232C;
   }
   
-  @media only screen and (max-width: 768px) {
-    .container {
+  .separator {
+    margin: 20px 0;
+    font-size: 1em;
+    color: #888;
+  }
+  
+  .create-account-btn {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #33527f;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #33527f;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .create-account-btn:hover {
+    background-color: #33527f;
+    color: #ffffff;
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #00796b;
+  }
+  
+  .login-link a {
+    color: #33527f;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .login-link a:hover {
+    color: #1a3155;
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 424px) {
+    body, .container {
       flex-direction: column;
     }
   
-    .welcome-section,
-    form {
-      order: 0; /* Reset the order for smaller screens */
+    .container {
+      margin: 10px;
     }
   
     .welcome-section {
       align-items: center;
-      padding: 30px;
+      padding: 18px;
     }
   
-    form {
-      padding: 30px;
-      border-radius: 0; /* Remove rounded corners for the form on smaller screens */
+    .signin-section {
+      padding: 18px;
+    }
+  
+    .welcome-section h1 {
+      font-size: 24px;
+    }
+  
+    .welcome-section p, .signin-section h2, .signin-btn, .create-account-btn {
+      font-size: 14px;
+    }
+  
+    .signin-btn, .create-account-btn {
+      width: 100%;
+      margin: 5px 0;
     }
   }

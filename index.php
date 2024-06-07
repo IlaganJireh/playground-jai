@@ -8,21 +8,19 @@
   <body>
     <div class="container">
       <div class="welcome-section">
-        <h1>Welcome to MemoirVerse!</h1>
+        <h1>MemoirVerse Registration</h1>
         <p>Enter your personal details to use all of site features.</p>
       </div>
-      <div class="signin-section">
-        <h2>Sign in</h2>
-        <button class="signin-btn github">GITHUB</button>
-        <button class="signin-btn google">GOOGLE</button>
-        <button class="signin-btn facebook">FACEBOOK</button>
+      <form>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="text" placeholder="First Name" required>
+      <input type="password" placeholder="Password" required>
+      <input type="date" placeholder="Date of Birth" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
         <div class="separator">or</div>
-        <button
-          class="create-account-btn"
-          onclick="window.location.href='signup.php'">Create Account</button>
-        <p class="login-link">
-          Already have an account? <a href="login.php">Log in</a>
-        </p>
       </div>
     </div>
   </body>
