@@ -5,39 +5,53 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #83d1db;
   }
   
   .container {
+    display: flex;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    width: 400px; /* Adjust the width as needed */
-  }
-  
-  .signin-section {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .signin-section h2 {
-    margin-bottom: 30px;
-    font-size: 2em;
-    color: #00796b;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    max-width: 800px;
     width: 100%;
   }
   
+  .welcome-section {
+    background-color: #334868;
+    color: #ffffff;
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    order: 2; /* Move the blue section to the right */
+  }
+  
+  .welcome-section h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  form {
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    order: 1; /* Move the form to the left */
+  }
+  
+  input[type="email"],
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="date"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -45,7 +59,7 @@ body {
     box-sizing: border-box;
   }
   
-  .signin-btn {
+  button[type="submit"] {
     padding: 10px 15px;
     background-color: #2C3E50;
     color: white;
@@ -54,23 +68,26 @@ body {
     cursor: pointer;
   }
   
-  .signin-btn:hover {
+  button[type="submit"]:hover {
     background-color: #1A232C;
   }
   
-  .login-link {
-    margin-top: 20px;
-    font-size: 1em;
-    color: #00796b;
-  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
   
-  .login-link a {
-    color: #33527f;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+    .welcome-section,
+    form {
+      order: 0; /* Reset the order for smaller screens */
+    }
   
-  .login-link a:hover {
-    color: #1a3155;
-    text-decoration: underline;
+    .welcome-section {
+      align-items: center;
+      padding: 30px;
+    }
+  
+    form {
+      padding: 30px;
+    }
   }

@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to MemorVerse!</h1>
+    <h1>Welcome to MemoirVerse!</h1>
     <p>Enter your personal details to use all of site features.</p>
     <form>
       <input type="email" placeholder="Email" required>
