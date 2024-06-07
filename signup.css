@@ -7,6 +7,12 @@ body {
     height: 100vh;
   }
   
+h1 {
+    background-color: #2C3E50;
+}
+
+
+
   .container {
     display: flex;
     background-color: #ffffff;
@@ -89,5 +95,6 @@ body {
   
     form {
       padding: 30px;
+      background-color: #2C3E50;
     }
   }
