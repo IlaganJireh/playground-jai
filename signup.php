@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>MemoirVerse Registration</title>
-  <link rel="stylesheet" type="text/css" href="./inde.css">
+  <link rel="stylesheet" type="text/css" href="./signup.css">
 </head>
 <body>
   <div class="container">
