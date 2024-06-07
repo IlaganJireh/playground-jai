@@ -15,8 +15,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
     width: 800px; /* Adjusted width */
-    padding: 25px;
-    box-shadow: #1d3b5e;
+    padding: 0px;
+    box-shadow: #031224;
 }
 
 .welcome-section {
