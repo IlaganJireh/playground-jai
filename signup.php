@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to MemoirVerse!</h1>
+    <h1>MemoirVerse Registration</h1>
     <p>Enter your personal details to use all of site features.</p>
     <form>
       <input type="email" placeholder="Email" required>
@@ -14,7 +14,7 @@
       <input type="text" placeholder="First Name" required>
       <input type="password" placeholder="Password" required>
       <input type="date" placeholder="Date of Birth" required>
-      <button type="submit">Sign in</button>
+      <button type="submit">Register</button>
     </form>
   </div>
   <script src="script.js"></script>
